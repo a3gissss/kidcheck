@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+::selection {
+  background-color: var(--color-teal-100);
+  color: var(--color-teal-950);
+}
+
+input,
+textarea {
+  caret-color: var(--color-teal-700);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal-700);
+  outline-offset: 2px;
+}

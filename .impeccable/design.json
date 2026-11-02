@@ -1,0 +1,850 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T09:40:32+00:00",
+  "title": "Design System: KidCheck",
+  "extensions": {
+    "colorMeta": {
+      "action-teal": {
+        "role": "primary",
+        "displayName": "Deep Clinic Teal",
+        "canonical": "oklch(51.1% 0.096 186.391)",
+        "source": "Tailwind v4 teal-700",
+        "tonalRamp": [
+          "oklch(27.7% 0.046 192.524)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(98.4% 0.014 180.72)"
+        ]
+      },
+      "action-teal-deep": {
+        "role": "primary",
+        "displayName": "Pressed Teal",
+        "canonical": "oklch(43.7% 0.078 188.216)",
+        "source": "Tailwind v4 teal-800",
+        "tonalRamp": [
+          "oklch(27.7% 0.046 192.524)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(98.4% 0.014 180.72)"
+        ]
+      },
+      "teal-ink": {
+        "role": "primary",
+        "displayName": "Teal Ink",
+        "canonical": "oklch(38.6% 0.063 188.416)",
+        "source": "Tailwind v4 teal-900",
+        "tonalRamp": [
+          "oklch(27.7% 0.046 192.524)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(98.4% 0.014 180.72)"
+        ]
+      },
+      "teal-wash": {
+        "role": "primary",
+        "displayName": "Teal Wash",
+        "canonical": "oklch(98.4% 0.014 180.72)",
+        "source": "Tailwind v4 teal-50",
+        "tonalRamp": [
+          "oklch(27.7% 0.046 192.524)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(98.4% 0.014 180.72)"
+        ]
+      },
+      "teal-mist": {
+        "role": "primary",
+        "displayName": "Teal Mist",
+        "canonical": "oklch(95.3% 0.051 180.801)",
+        "source": "Tailwind v4 teal-100",
+        "tonalRamp": [
+          "oklch(27.7% 0.046 192.524)",
+          "oklch(38.6% 0.063 188.416)",
+          "oklch(43.7% 0.078 188.216)",
+          "oklch(51.1% 0.096 186.391)",
+          "oklch(70.4% 0.14 182.503)",
+          "oklch(85.5% 0.138 181.071)",
+          "oklch(95.3% 0.051 180.801)",
+          "oklch(98.4% 0.014 180.72)"
+        ]
+      },
+      "ground-slate": {
+        "role": "neutral",
+        "displayName": "Ground Slate",
+        "canonical": "oklch(98.4% 0.003 247.858)",
+        "source": "Tailwind v4 slate-50",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "panel-white": {
+        "role": "neutral",
+        "displayName": "Panel White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)",
+          "#ffffff"
+        ]
+      },
+      "hover-slate": {
+        "role": "neutral",
+        "displayName": "Hover Slate",
+        "canonical": "oklch(96.8% 0.007 247.896)",
+        "source": "Tailwind v4 slate-100",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "hairline-slate": {
+        "role": "neutral",
+        "displayName": "Hairline Slate",
+        "canonical": "oklch(92.9% 0.013 255.508)",
+        "source": "Tailwind v4 slate-200",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "control-slate": {
+        "role": "neutral",
+        "displayName": "Control Slate",
+        "canonical": "oklch(86.9% 0.022 252.894)",
+        "source": "Tailwind v4 slate-300",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "quiet-slate": {
+        "role": "neutral",
+        "displayName": "Quiet Slate",
+        "canonical": "oklch(55.4% 0.046 257.417)",
+        "source": "Tailwind v4 slate-500",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "secondary-slate": {
+        "role": "neutral",
+        "displayName": "Secondary Slate",
+        "canonical": "oklch(44.6% 0.043 257.281)",
+        "source": "Tailwind v4 slate-600",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "lead-slate": {
+        "role": "neutral",
+        "displayName": "Lead Slate",
+        "canonical": "oklch(37.2% 0.044 257.287)",
+        "source": "Tailwind v4 slate-700",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "ink-slate": {
+        "role": "neutral",
+        "displayName": "Ink Slate",
+        "canonical": "oklch(20.8% 0.042 265.755)",
+        "source": "Tailwind v4 slate-900",
+        "tonalRamp": [
+          "oklch(12.9% 0.042 264.695)",
+          "oklch(20.8% 0.042 265.755)",
+          "oklch(27.9% 0.041 260.031)",
+          "oklch(37.2% 0.044 257.287)",
+          "oklch(55.4% 0.046 257.417)",
+          "oklch(86.9% 0.022 252.894)",
+          "oklch(96.8% 0.007 247.896)",
+          "oklch(98.4% 0.003 247.858)"
+        ]
+      },
+      "caution-amber-wash": {
+        "role": "secondary",
+        "displayName": "Caution Amber Wash",
+        "canonical": "oklch(98.7% 0.022 95.277)",
+        "source": "Tailwind v4 amber-50",
+        "tonalRamp": [
+          "oklch(27.9% 0.077 45.635)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(98.7% 0.022 95.277)"
+        ]
+      },
+      "disclaimer-amber": {
+        "role": "secondary",
+        "displayName": "Disclaimer Amber",
+        "canonical": "oklch(96.2% 0.059 95.617)",
+        "source": "Tailwind v4 amber-100",
+        "tonalRamp": [
+          "oklch(27.9% 0.077 45.635)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(98.7% 0.022 95.277)"
+        ]
+      },
+      "caution-amber-edge": {
+        "role": "secondary",
+        "displayName": "Caution Amber Edge",
+        "canonical": "oklch(87.9% 0.169 91.605)",
+        "source": "Tailwind v4 amber-300",
+        "tonalRamp": [
+          "oklch(27.9% 0.077 45.635)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(98.7% 0.022 95.277)"
+        ]
+      },
+      "caution-amber-text": {
+        "role": "secondary",
+        "displayName": "Caution Amber Text",
+        "canonical": "oklch(47.3% 0.137 46.201)",
+        "source": "Tailwind v4 amber-800",
+        "tonalRamp": [
+          "oklch(27.9% 0.077 45.635)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(98.7% 0.022 95.277)"
+        ]
+      },
+      "caution-amber-ink": {
+        "role": "secondary",
+        "displayName": "Caution Amber Ink",
+        "canonical": "oklch(41.4% 0.112 45.904)",
+        "source": "Tailwind v4 amber-900",
+        "tonalRamp": [
+          "oklch(27.9% 0.077 45.635)",
+          "oklch(41.4% 0.112 45.904)",
+          "oklch(47.3% 0.137 46.201)",
+          "oklch(55.5% 0.163 48.998)",
+          "oklch(76.9% 0.188 70.08)",
+          "oklch(87.9% 0.169 91.605)",
+          "oklch(96.2% 0.059 95.617)",
+          "oklch(98.7% 0.022 95.277)"
+        ]
+      },
+      "refer-red-wash": {
+        "role": "secondary",
+        "displayName": "Referral Red Wash",
+        "canonical": "oklch(97.1% 0.013 17.38)",
+        "source": "Tailwind v4 red-50",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "refer-red-tint": {
+        "role": "secondary",
+        "displayName": "Referral Red Tint",
+        "canonical": "oklch(93.6% 0.032 17.717)",
+        "source": "Tailwind v4 red-100",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "refer-red-edge": {
+        "role": "secondary",
+        "displayName": "Referral Red Edge",
+        "canonical": "oklch(80.8% 0.114 19.571)",
+        "source": "Tailwind v4 red-300",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "error-red-stroke": {
+        "role": "secondary",
+        "displayName": "Error Stroke Red",
+        "canonical": "oklch(57.7% 0.245 27.325)",
+        "source": "Tailwind v4 red-600",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "refer-red": {
+        "role": "secondary",
+        "displayName": "Referral Red",
+        "canonical": "oklch(50.5% 0.213 27.518)",
+        "source": "Tailwind v4 red-700",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "refer-red-deep": {
+        "role": "secondary",
+        "displayName": "Referral Red Deep",
+        "canonical": "oklch(44.4% 0.177 26.899)",
+        "source": "Tailwind v4 red-800",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "refer-red-ink": {
+        "role": "secondary",
+        "displayName": "Referral Red Ink",
+        "canonical": "oklch(39.6% 0.141 25.723)",
+        "source": "Tailwind v4 red-900",
+        "tonalRamp": [
+          "oklch(25.8% 0.092 26.042)",
+          "oklch(39.6% 0.141 25.723)",
+          "oklch(44.4% 0.177 26.899)",
+          "oklch(50.5% 0.213 27.518)",
+          "oklch(63.7% 0.237 25.331)",
+          "oklch(80.8% 0.114 19.571)",
+          "oklch(93.6% 0.032 17.717)",
+          "oklch(97.1% 0.013 17.38)"
+        ]
+      },
+      "ai-violet-wash": {
+        "role": "secondary",
+        "displayName": "AI Violet Wash",
+        "canonical": "oklch(96.9% 0.016 293.756)",
+        "source": "Tailwind v4 violet-50",
+        "tonalRamp": [
+          "oklch(28.3% 0.141 291.089)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(96.9% 0.016 293.756)"
+        ]
+      },
+      "ai-violet-tint": {
+        "role": "secondary",
+        "displayName": "AI Violet Tint",
+        "canonical": "oklch(94.3% 0.029 294.588)",
+        "source": "Tailwind v4 violet-100",
+        "tonalRamp": [
+          "oklch(28.3% 0.141 291.089)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(96.9% 0.016 293.756)"
+        ]
+      },
+      "ai-violet-edge": {
+        "role": "secondary",
+        "displayName": "AI Violet Edge",
+        "canonical": "oklch(81.1% 0.111 293.571)",
+        "source": "Tailwind v4 violet-300",
+        "tonalRamp": [
+          "oklch(28.3% 0.141 291.089)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(96.9% 0.016 293.756)"
+        ]
+      },
+      "ai-violet-text": {
+        "role": "secondary",
+        "displayName": "AI Violet Text",
+        "canonical": "oklch(43.2% 0.232 292.759)",
+        "source": "Tailwind v4 violet-800",
+        "tonalRamp": [
+          "oklch(28.3% 0.141 291.089)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(96.9% 0.016 293.756)"
+        ]
+      },
+      "ai-violet-ink": {
+        "role": "secondary",
+        "displayName": "AI Violet Ink",
+        "canonical": "oklch(38% 0.189 293.745)",
+        "source": "Tailwind v4 violet-900",
+        "tonalRamp": [
+          "oklch(28.3% 0.141 291.089)",
+          "oklch(38% 0.189 293.745)",
+          "oklch(43.2% 0.232 292.759)",
+          "oklch(49.1% 0.27 292.581)",
+          "oklch(60.6% 0.25 292.717)",
+          "oklch(81.1% 0.111 293.571)",
+          "oklch(94.3% 0.029 294.588)",
+          "oklch(96.9% 0.016 293.756)"
+        ]
+      },
+      "info-sky-wash": {
+        "role": "secondary",
+        "displayName": "Information Sky Wash",
+        "canonical": "oklch(97.7% 0.013 236.62)",
+        "source": "Tailwind v4 sky-50",
+        "tonalRamp": [
+          "oklch(29.3% 0.066 243.157)",
+          "oklch(39.1% 0.09 240.876)",
+          "oklch(44.3% 0.11 240.79)",
+          "oklch(50% 0.134 242.749)",
+          "oklch(68.5% 0.169 237.323)",
+          "oklch(82.8% 0.111 230.318)",
+          "oklch(95.1% 0.026 236.824)",
+          "oklch(97.7% 0.013 236.62)"
+        ]
+      },
+      "info-sky-tint": {
+        "role": "secondary",
+        "displayName": "Information Sky Tint",
+        "canonical": "oklch(95.1% 0.026 236.824)",
+        "source": "Tailwind v4 sky-100",
+        "tonalRamp": [
+          "oklch(29.3% 0.066 243.157)",
+          "oklch(39.1% 0.09 240.876)",
+          "oklch(44.3% 0.11 240.79)",
+          "oklch(50% 0.134 242.749)",
+          "oklch(68.5% 0.169 237.323)",
+          "oklch(82.8% 0.111 230.318)",
+          "oklch(95.1% 0.026 236.824)",
+          "oklch(97.7% 0.013 236.62)"
+        ]
+      },
+      "info-sky-edge": {
+        "role": "secondary",
+        "displayName": "Information Sky Edge",
+        "canonical": "oklch(82.8% 0.111 230.318)",
+        "source": "Tailwind v4 sky-300",
+        "tonalRamp": [
+          "oklch(29.3% 0.066 243.157)",
+          "oklch(39.1% 0.09 240.876)",
+          "oklch(44.3% 0.11 240.79)",
+          "oklch(50% 0.134 242.749)",
+          "oklch(68.5% 0.169 237.323)",
+          "oklch(82.8% 0.111 230.318)",
+          "oklch(95.1% 0.026 236.824)",
+          "oklch(97.7% 0.013 236.62)"
+        ]
+      },
+      "info-sky-ink": {
+        "role": "secondary",
+        "displayName": "Information Sky Ink",
+        "canonical": "oklch(39.1% 0.09 240.876)",
+        "source": "Tailwind v4 sky-900",
+        "tonalRamp": [
+          "oklch(29.3% 0.066 243.157)",
+          "oklch(39.1% 0.09 240.876)",
+          "oklch(44.3% 0.11 240.79)",
+          "oklch(50% 0.134 242.749)",
+          "oklch(68.5% 0.169 237.323)",
+          "oklch(82.8% 0.111 230.318)",
+          "oklch(95.1% 0.026 236.824)",
+          "oklch(97.7% 0.013 236.62)"
+        ]
+      },
+      "clear-emerald-wash": {
+        "role": "secondary",
+        "displayName": "All-Clear Emerald Wash",
+        "canonical": "oklch(97.9% 0.021 166.113)",
+        "source": "Tailwind v4 emerald-50",
+        "tonalRamp": [
+          "oklch(26.2% 0.051 172.552)",
+          "oklch(37.8% 0.077 168.94)",
+          "oklch(43.2% 0.095 166.913)",
+          "oklch(50.8% 0.118 165.612)",
+          "oklch(69.6% 0.17 162.48)",
+          "oklch(84.5% 0.143 164.978)",
+          "oklch(95% 0.052 163.051)",
+          "oklch(97.9% 0.021 166.113)"
+        ]
+      },
+      "clear-emerald-tint": {
+        "role": "secondary",
+        "displayName": "All-Clear Emerald Tint",
+        "canonical": "oklch(95% 0.052 163.051)",
+        "source": "Tailwind v4 emerald-100",
+        "tonalRamp": [
+          "oklch(26.2% 0.051 172.552)",
+          "oklch(37.8% 0.077 168.94)",
+          "oklch(43.2% 0.095 166.913)",
+          "oklch(50.8% 0.118 165.612)",
+          "oklch(69.6% 0.17 162.48)",
+          "oklch(84.5% 0.143 164.978)",
+          "oklch(95% 0.052 163.051)",
+          "oklch(97.9% 0.021 166.113)"
+        ]
+      },
+      "clear-emerald-edge": {
+        "role": "secondary",
+        "displayName": "All-Clear Emerald Edge",
+        "canonical": "oklch(84.5% 0.143 164.978)",
+        "source": "Tailwind v4 emerald-300",
+        "tonalRamp": [
+          "oklch(26.2% 0.051 172.552)",
+          "oklch(37.8% 0.077 168.94)",
+          "oklch(43.2% 0.095 166.913)",
+          "oklch(50.8% 0.118 165.612)",
+          "oklch(69.6% 0.17 162.48)",
+          "oklch(84.5% 0.143 164.978)",
+          "oklch(95% 0.052 163.051)",
+          "oklch(97.9% 0.021 166.113)"
+        ]
+      },
+      "clear-emerald-text": {
+        "role": "secondary",
+        "displayName": "All-Clear Emerald Text",
+        "canonical": "oklch(43.2% 0.095 166.913)",
+        "source": "Tailwind v4 emerald-800",
+        "tonalRamp": [
+          "oklch(26.2% 0.051 172.552)",
+          "oklch(37.8% 0.077 168.94)",
+          "oklch(43.2% 0.095 166.913)",
+          "oklch(50.8% 0.118 165.612)",
+          "oklch(69.6% 0.17 162.48)",
+          "oklch(84.5% 0.143 164.978)",
+          "oklch(95% 0.052 163.051)",
+          "oklch(97.9% 0.021 166.113)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Landing headline only; 2.25rem below 640px, 3rem above, balanced wrap."
+      },
+      "alarm": {
+        "displayName": "Alarm",
+        "purpose": "Full-screen urgent referral alert headline; 1.875rem below 640px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page titles, outcome label, landing section headings."
+      },
+      "title-lg": {
+        "displayName": "Title Large",
+        "purpose": "Standalone panel headings (Start a case, crash panel)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings inside panels; 1.125rem on landing sub-sections."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "Landing opening paragraph."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, 60ch cap on landing."
+      },
+      "body-sm": {
+        "displayName": "Body Small",
+        "purpose": "The app's working size: notices, helper text, pills, inline errors."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, legends, buttons (at 1rem), nav links, badges."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Disclaimer on phones, footer, chart-page citations, counter."
+      }
+    },
+    "shadows": [
+      {
+        "name": "landing-panel-lift",
+        "value": "0 8px 24px -12px rgb(15 23 42 / 0.18)",
+        "purpose": "Single use: the landing Start a case panel. App panels are flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "No transitions are used; hover and selected states change instantly."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px",
+        "purpose": "Global :focus-visible on every element; choice pills mirror it via :has(:focus-visible)."
+      },
+      {
+        "name": "focus-ring-on-red",
+        "value": "outline: 4px solid #ffffff",
+        "purpose": "Button on the red urgent alert."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "containers": [
+      {
+        "name": "shell",
+        "value": "1024px"
+      },
+      {
+        "name": "form",
+        "value": "672px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one teal action in a group: Fill checklist with AI, Save and see result, New case.",
+      "html": "<button class=\"ds-btn-primary\">Save and see result</button>",
+      "css": ".ds-btn-primary { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; background: oklch(51.1% 0.096 186.391); color: #fff; padding: 12px 24px; border: none; border-radius: 0.5rem; font-size: 1rem; font-weight: 500; line-height: 1.5; cursor: pointer; } .ds-btn-primary:hover { background: oklch(43.7% 0.078 188.216); } .ds-btn-primary:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; } .ds-btn-primary:disabled { opacity: 0.7; cursor: wait; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "White bordered companion to a primary: Fill checklist myself, Back, Edit answers.",
+      "html": "<button class=\"ds-btn-secondary\">Fill checklist myself</button>",
+      "css": ".ds-btn-secondary { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; background: #fff; color: oklch(20.8% 0.042 265.755); padding: 12px 24px; border: 1px solid oklch(86.9% 0.022 252.894); border-radius: 0.5rem; font-size: 1rem; font-weight: 500; line-height: 1.5; cursor: pointer; } .ds-btn-secondary:hover { background: oklch(96.8% 0.007 247.896); } .ds-btn-secondary:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; }"
+    },
+    {
+      "name": "Referral Button",
+      "kind": "button",
+      "refersTo": "button-refer",
+      "description": "Red action only inside the Refer urgently panel: Print referral note.",
+      "html": "<button class=\"ds-btn-refer\">Print referral note</button>",
+      "css": ".ds-btn-refer { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; background: oklch(50.5% 0.213 27.518); color: #fff; padding: 10px 20px; border: none; border-radius: 0.5rem; font-size: 1rem; font-weight: 500; cursor: pointer; } .ds-btn-refer:hover { background: oklch(44.4% 0.177 26.899); } .ds-btn-refer:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; }"
+    },
+    {
+      "name": "Choice Pills",
+      "kind": "chip",
+      "refersTo": "choice-pill",
+      "description": "Yes / No / Not asked radio row for one checklist field, with the AI badge on the legend.",
+      "html": "<fieldset class=\"ds-field\"><legend class=\"ds-legend\">Vomits everything<span class=\"ds-ai\">AI</span></legend><div class=\"ds-pills\"><label class=\"ds-pill ds-pill-on\"><input type=\"radio\" name=\"v\" checked>Yes</label><label class=\"ds-pill\"><input type=\"radio\" name=\"v\">No</label><label class=\"ds-pill\"><input type=\"radio\" name=\"v\">Not asked</label></div></fieldset><fieldset class=\"ds-field\"><legend class=\"ds-legend\">Chest indrawing</legend><div class=\"ds-pills\"><label class=\"ds-pill\"><input type=\"radio\" name=\"c\">Yes</label><label class=\"ds-pill\"><input type=\"radio\" name=\"c\">No</label><label class=\"ds-pill ds-pill-na\"><input type=\"radio\" name=\"c\" checked>Not asked</label></div></fieldset>",
+      "css": ".ds-field { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; border: none; margin: 0; padding: 12px 0; color: oklch(20.8% 0.042 265.755); } .ds-legend { font-size: 0.875rem; font-weight: 500; padding: 0; } .ds-ai { margin-left: 8px; border-radius: 0.25rem; background: oklch(94.3% 0.029 294.588); color: oklch(43.2% 0.232 292.759); padding: 2px 6px; font-size: 0.75rem; font-weight: 600; } .ds-pills { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 8px; } .ds-pill { position: relative; cursor: pointer; border: 1px solid oklch(86.9% 0.022 252.894); background: #fff; border-radius: 0.375rem; padding: 6px 12px; font-size: 0.875rem; line-height: 1.43; } .ds-pill:hover { background: oklch(96.8% 0.007 247.896); } .ds-pill:has(:focus-visible) { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; } .ds-pill input { position: absolute; width: 1px; height: 1px; opacity: 0; } .ds-pill-on, .ds-pill-on:hover { background: oklch(51.1% 0.096 186.391); border-color: oklch(51.1% 0.096 186.391); color: #fff; } .ds-pill-na, .ds-pill-na:hover { background: oklch(92.9% 0.013 255.508); border-color: oklch(55.4% 0.046 257.417); }"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Case log outcome filters with counts; fully rounded, teal when pressed.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\">All (6)</button><button class=\"ds-chip\" aria-pressed=\"false\">Refer urgently (2)</button><button class=\"ds-chip\" aria-pressed=\"false\">Needs more answers (1)</button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; } .ds-chip { font-family: inherit; border: 1px solid oklch(86.9% 0.022 252.894); background: #fff; color: oklch(20.8% 0.042 265.755); border-radius: 9999px; padding: 4px 12px; font-size: 0.875rem; line-height: 1.43; cursor: pointer; } .ds-chip:hover { background: oklch(96.8% 0.007 247.896); } .ds-chip[aria-pressed=true] { background: oklch(51.1% 0.096 186.391); border-color: oklch(51.1% 0.096 186.391); color: #fff; } .ds-chip:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "textarea",
+      "description": "Description box and number field; red stroke and message on error.",
+      "html": "<label class=\"ds-label\" for=\"ds-t\">What is wrong with the child?</label><textarea id=\"ds-t\" class=\"ds-textarea\" rows=\"3\" placeholder=\"e.g. Boy, 18 months, coughing for 3 days...\"></textarea><label class=\"ds-label\" for=\"ds-n\">Breaths in one minute</label><div class=\"ds-row\"><input id=\"ds-n\" class=\"ds-num ds-invalid\" type=\"number\" value=\"300\"><span class=\"ds-unit\">breaths</span></div><p class=\"ds-err\">Enter a number between 10 and 150.</p>",
+      "css": ".ds-label { display: block; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; font-weight: 500; color: oklch(20.8% 0.042 265.755); margin-top: 12px; } .ds-textarea { margin-top: 8px; width: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; font-size: 1rem; border: 1px solid oklch(86.9% 0.022 252.894); border-radius: 0.375rem; padding: 12px; background: #fff; caret-color: oklch(51.1% 0.096 186.391); } .ds-textarea::placeholder { color: oklch(55.4% 0.046 257.417); } .ds-row { margin-top: 4px; display: flex; align-items: center; gap: 8px; } .ds-num { width: 112px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; font-size: 1rem; border: 1px solid oklch(86.9% 0.022 252.894); border-radius: 0.375rem; padding: 8px 12px; background: #fff; caret-color: oklch(51.1% 0.096 186.391); } .ds-textarea:focus-visible, .ds-num:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; } .ds-invalid { border-color: oklch(57.7% 0.245 27.325); } .ds-unit { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; font-size: 0.875rem; color: oklch(44.6% 0.043 257.281); } .ds-err { margin: 4px 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; font-size: 0.875rem; color: oklch(50.5% 0.213 27.518); }"
+    },
+    {
+      "name": "Header and Disclaimer",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Amber disclaimer bar above the white header with wordmark and two links.",
+      "html": "<div class=\"ds-disclaimer\">Educational prototype. Not a medical device. Not clinically validated.</div><header class=\"ds-header\"><nav class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\">KidCheck</a><div class=\"ds-links\"><a class=\"ds-link ds-link-active\" href=\"#\">New case</a><a class=\"ds-link\" href=\"#\">Case log</a></div></nav></header>",
+      "css": ".ds-disclaimer { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; background: oklch(96.2% 0.059 95.617); color: oklch(41.4% 0.112 45.904); font-size: 0.875rem; text-align: center; padding: 8px 16px; } .ds-header { background: #fff; border-bottom: 1px solid oklch(92.9% 0.013 255.508); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; } .ds-nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; } .ds-brand { font-size: 1.125rem; font-weight: 700; color: oklch(51.1% 0.096 186.391); text-decoration: none; } .ds-links { display: flex; gap: 4px; } .ds-link { padding: 8px 12px; border-radius: 0.375rem; font-size: 0.875rem; font-weight: 500; color: oklch(37.2% 0.044 257.287); text-decoration: none; } .ds-link:hover { background: oklch(96.8% 0.007 247.896); } .ds-link-active, .ds-link-active:hover { background: oklch(51.1% 0.096 186.391); color: #fff; } .ds-brand:focus-visible, .ds-link:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; }"
+    },
+    {
+      "name": "Notices",
+      "kind": "custom",
+      "refersTo": "notice",
+      "description": "Tint-edge-ink notices: sky privacy, violet AI count, amber fallback, red error.",
+      "html": "<div class=\"ds-notice ds-sky\">Do not type the child's or carer's name, phone number or village. Age and sex are enough.</div><div class=\"ds-notice ds-violet\">AI filled 3 answers from your description. Check every answer marked <b>AI</b>.</div><div class=\"ds-notice ds-amber\"><b>AI unavailable, using the manual checklist.</b> The WHO rules work exactly the same.</div><div class=\"ds-notice ds-red\">Fix 2 fields before saving.</div>",
+      "css": ".ds-notice { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; border: 1px solid; border-radius: 0.375rem; padding: 12px; font-size: 0.875rem; line-height: 1.43; margin-bottom: 12px; } .ds-notice b { font-weight: 500; } .ds-sky { background: oklch(97.7% 0.013 236.62); border-color: oklch(90.1% 0.058 230.902); color: oklch(39.1% 0.09 240.876); } .ds-violet { background: oklch(96.9% 0.016 293.756); border-color: oklch(81.1% 0.111 293.571); color: oklch(38% 0.189 293.745); } .ds-violet b { font-weight: 600; } .ds-amber { background: oklch(98.7% 0.022 95.277); border-color: oklch(87.9% 0.169 91.605); color: oklch(41.4% 0.112 45.904); } .ds-red { background: oklch(97.1% 0.013 17.38); border-color: oklch(80.8% 0.114 19.571); color: oklch(44.4% 0.177 26.899); }"
+    },
+    {
+      "name": "Outcome Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "The case result: 2px outcome-hue border over its wash, outcome headline, trigger with chart page; plus outcome badges.",
+      "html": "<section class=\"ds-outcome\"><h2 class=\"ds-outcome-title\">Refer urgently</h2><p class=\"ds-outcome-lead\">Go to the nearest health facility now. Triggered by:</p><ul class=\"ds-outcome-list\"><li>Vomits everything <span class=\"ds-page\">(chart p. 6)</span></li></ul><button class=\"ds-outcome-btn\">Print referral note</button></section><span class=\"ds-badge\">Refer urgently</span> <span class=\"ds-badge ds-badge-home\">No illness sign found</span>",
+      "css": ".ds-outcome { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; color: oklch(20.8% 0.042 265.755); border: 2px solid oklch(80.8% 0.114 19.571); background: oklch(97.1% 0.013 17.38); border-radius: 0.5rem; padding: 16px; margin-bottom: 16px; } .ds-outcome-title { margin: 0; font-size: 1.5rem; line-height: 1.33; font-weight: 700; } .ds-outcome-lead { margin: 8px 0 0; font-weight: 500; } .ds-outcome-list { margin: 4px 0 0; padding-left: 24px; } .ds-page { white-space: nowrap; font-size: 0.75rem; color: oklch(55.4% 0.046 257.417); } .ds-outcome-btn { margin-top: 16px; font-family: inherit; background: oklch(50.5% 0.213 27.518); color: #fff; border: none; border-radius: 0.5rem; padding: 10px 20px; font-size: 1rem; font-weight: 500; cursor: pointer; } .ds-outcome-btn:hover { background: oklch(44.4% 0.177 26.899); } .ds-outcome-btn:focus-visible { outline: 2px solid oklch(51.1% 0.096 186.391); outline-offset: 2px; } .ds-badge { display: inline-block; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif; border-radius: 9999px; padding: 4px 12px; font-size: 0.875rem; font-weight: 500; background: oklch(93.6% 0.032 17.717); color: oklch(44.4% 0.177 26.899); } .ds-badge-home { background: oklch(95% 0.052 163.051); color: oklch(43.2% 0.095 166.913); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Clinic Chart",
+    "overview": "KidCheck looks like a well-kept paper chart moved onto a screen: a pale slate ground, white panels with hairline borders, plain bold headings, and one teal colour that means \"do this next\". Everything is flat and quiet so that the few loud things (the amber disclaimer, a red referral, a violet AI mark) carry their meaning instantly. The density is a form's density: stacked fields, short lines, generous tap targets, a single centred column of at most 672px on working pages.\n\nColour is semantic before it is decorative. Each hue owns one job across the whole app: teal acts, amber cautions, red refers or reports an error, violet marks what the AI filled, sky informs, emerald clears. Slate carries everything else. The landing page uses the same materials at a larger scale (a 12-column split and a 48px headline) rather than a separate marketing look.\n\nThe system is built entirely from Tailwind CSS v4's default palette, radius and type scale, with no custom theme. Global CSS adds only teal text selection, a teal caret, and a 2px teal focus outline on every focusable element.",
+    "keyCharacteristics": [
+      "Slate-50 ground, white panels, slate-200 hairlines; flat, no shadows in the app.",
+      "One action colour (teal-700) for primary buttons, selected choices, the active nav item and focus.",
+      "Hue is role: amber, red, violet, sky and emerald each mean one thing.",
+      "One sans family for everything; weight (bold, semibold, medium) does the hierarchy work.",
+      "8px-radius buttons and panels, 6px-radius controls and notices, full pills only for filters and outcome badges.",
+      "No motion: hover states change colour instantly."
+    ],
+    "rules": [
+      {
+        "name": "The One Action Colour Rule",
+        "body": "Teal is the only colour that invites a tap. A primary button, a selected choice and the active nav item are teal; nothing else is. The single exception is the referral context, where the print button and the alert are red because the decision itself is red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hue Is Role Rule",
+        "body": "Each signal hue keeps its one meaning on every screen: amber cautions, red refers or reports an error, violet marks AI-filled content, sky informs, emerald clears. Never borrow a signal hue for decoration or emphasis.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tint-Edge-Ink Rule",
+        "body": "Every coloured notice and outcome panel is built the same way: the hue's 50 wash as fill, its 300 as the border, its 800 or 900 as text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Weight Steps Rule",
+        "body": "Within the UI, hierarchy steps by weight (700 headings, 600 titles, 500 labels, 400 text), not by colour: headings stay ink slate, never teal or a signal hue.",
+        "section": "typography"
+      },
+      {
+        "name": "The Hairline Not Shadow Rule",
+        "body": "Inside the app, a panel is separated from the ground by a slate-200 hairline, never by a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use teal-700 (hover teal-800) for the one primary action in any group, and pair it with a white bordered secondary when there is a second choice.",
+      "**Do** keep the amber disclaimer bar at the top of every page, full width, above the header.",
+      "**Do** build every coloured notice and outcome panel as wash fill, 300 border, 800/900 text in its role hue.",
+      "**Do** put the \"AI\" violet badge beside any value the model filled, and remove it as soon as the CHW changes that value.",
+      "**Do** show \"Not asked\" as its own option, last in the row, with its own slate selected state.",
+      "**Do** follow every rule-based result with its chart page in a slate caption.",
+      "**Do** keep working pages to a single 672px column with 24px between blocks."
+    ],
+    "donts": [
+      "**Don't** use teal for anything that is not an action, a selection, a link or focus.",
+      "**Don't** use violet for anything except AI-filled content.",
+      "**Don't** use red outside errors, destructive actions and the referral outcome.",
+      "**Don't** add shadows to app panels; separate them from the ground with the slate-200 hairline.",
+      "**Don't** let a selected \"Not asked\" look like a teal answer.",
+      "**Don't** introduce colours outside Tailwind's default palette or new hues beyond the roles above."
+    ]
+  }
+}
