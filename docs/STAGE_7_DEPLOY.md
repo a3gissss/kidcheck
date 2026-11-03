@@ -63,6 +63,22 @@ Changing an environment variable later needs a **Redeploy** (Deployments → ⋯
 
 If the AI shows "AI unavailable": check the variable name is exactly `GEMINI_API_KEY`, redeploy, then look at Vercel → Project → **Logs** for `extract failed:` lines (they never include the CHW's text).
 
+## Live result (Nov 3, 2026)
+
+Deployed at **https://kidcheck-three.vercel.app** from `github.com/a3gissss/kidcheck` (branch `main`).
+
+| Check | Result |
+|---|---|
+| Security headers | CSP, X-Frame-Options DENY, nosniff, Referrer-Policy and Permissions-Policy present; Vercel adds HSTS |
+| Addresses `/new`, `/cases/KC-...`, `/nowhere` | All load the app (rewrite works) |
+| `/.env`, `/.env.local`, `/server/extract.js` | Return only the app page; no files exposed |
+| API: GET / empty / 1,100 characters | 405 / 400 / 400, `Cache-Control: no-store` |
+| Real Gemini call (demo "Fast breathing, vomiting") | 200 in about 3.6 s: age 18, male, vomits everything, cough 3 days; breaths correctly left empty |
+| Full journey in the browser | 5 AI answers badged, red alert "Vomits everything", *Refer urgently*, "checklist filled by AI (gemini-3.5-flash-lite), checked by CHW" |
+| Reload of the case page | Same case, no alert |
+| Phone width on `/`, `/new`, `/cases` | No sideways scroll |
+| Browser console | Empty |
+
 ## Limits to know
 
 - **Rate limit** (10 AI requests a minute per IP) is per server instance, so it is best effort. The Gemini free quota is the real cap.

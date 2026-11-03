@@ -22,11 +22,15 @@
 
 | Nov 2, 2026 | Stage 6 done: 20 UI journey tests (165 total), axe scan of 12 states (0 violations after fixes), keyboard, links, secrets, npm audit, hostile API requests. 4 bugs fixed: MUAC answer erased while typing age; dev API crash on large requests; citation contrast; disclaimer landmark. Found: github.com/Aegis-31 does not exist; corrected to github.com/a3gissss in README, API_KEYS and the Stage 1 push command. |
 
-| Nov 2, 2026 | Stage 7 prepared: vercel.json (deep-link rewrites, CSP and security headers, no-store on /api), engines node>=20, `npm run preview` mirrors Vercel headers and API. Production build tested under CSP with no violations. Function contract tested (168 tests). Waiting on GitHub repo and Vercel import (user steps). |
+| Nov 2, 2026 | Stage 7 prepared: vercel.json (deep-link rewrites, CSP and security headers, no-store on /api), engines node>=20, `npm run preview` mirrors Vercel headers and API. Production build tested under CSP with no violations. Function contract tested (168 tests). Code pushed to github.com/a3gissss/kidcheck (main, first commit 87298a9). Waiting on Vercel import (user step). |
+
+| Nov 3, 2026 | Stage 7 done: live at https://kidcheck-three.vercel.app. Headers, deep links, API checks, real Gemini extraction and a full journey all pass on the live site; console empty; no sideways scroll on phone. |
 
 ## Next
 
-- Stage 7 user steps: create github.com/a3gissss/kidcheck, push, import to Vercel, add GEMINI_API_KEY, check the live site (docs/STAGE_7_DEPLOY.md).
+- Run `npm run eval` (needs GEMINI_API_KEY in .env.local) and put the numbers in the README.
+- Stage 8: README screenshots, architecture diagram, licence.
+- Deliverables: demo video script, one-page PDF, code PDF, final checks.
 - Add `GEMINI_API_KEY` to `.env.local`, try the demo cases, run `npm run eval`.
 - Put the repo on GitHub (`git init` not done yet).
 - Stage 6: full testing and debugging pass (all journeys, phone width, console, broken links, accessibility).

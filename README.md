@@ -2,7 +2,9 @@
 
 **Plain words in, WHO-backed decisions out.**
 
-KidCheck is a web app that helps community health workers (CHWs) spot danger signs in sick children aged 2 months to 5 years and decide: refer urgently, treat at home, or advise and monitor.
+KidCheck is a web app that helps community health workers (CHWs) spot danger signs in sick children aged 2 months to 5 years and decide: refer urgently, treat at home, or no illness sign found.
+
+**Live demo: https://kidcheck-three.vercel.app** · Code: https://github.com/a3gissss/kidcheck
 
 Built for **DSH Hacks V2** (AI x Healthcare). Submission deadline: **Nov 15, 2026**.
 
@@ -15,11 +17,11 @@ Built for **DSH Hacks V2** (AI x Healthcare). Submission deadline: **Nov 15, 202
 | 1. Project setup | Done |
 | 2. UI and navigation | Done |
 | 3. Rule engine + unit tests | Done |
-| 4. Gemini extraction + fallback | Done (run `npm run eval` with your key) |
+| 4. Gemini extraction + fallback | Done; works live (accuracy eval not run yet: `npm run eval`) |
 | 5. Validation and error states | Done |
 | 6. Testing and debugging | Done |
-| 7. Deploy to Vercel | Prepared and tested locally; your GitHub and Vercel steps remain |
-| 8. GitHub repo polish | Not started |
+| 7. Deploy to Vercel | Done: https://kidcheck-three.vercel.app |
+| 8. GitHub repo polish | Next |
 
 ## The problem
 
