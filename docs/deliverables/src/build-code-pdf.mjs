@@ -11,7 +11,6 @@ const hljs = createRequire(import.meta.url)(process.argv[2])
 const tocPages = process.argv[3] ? JSON.parse(readFileSync(process.argv[3], 'utf8')) : {}
 const root = new URL('../../../', import.meta.url)
 const read = (p) => readFileSync(new URL(p, root), 'utf8').replace(/\r\n/g, '\n')
-const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 const commit = execSync('git rev-parse --short HEAD', { cwd: root }).toString().trim()
 const lines = (p) => read(p).trimEnd().split('\n').length
 

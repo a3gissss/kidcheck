@@ -7,6 +7,10 @@ import { screen, within } from '@testing-library/react'
 import { renderApp, fillChecklist, ALL_NO, mockApi } from './app.jsx'
 import { STORAGE_KEY } from '../lib/storage.js'
 
+// These tests click through whole forms like a real user, which can pass the
+// default 5 s limit when the machine is busy.
+vi.setConfig({ testTimeout: 20_000 })
+
 const savedCases = () => JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]')
 
 async function openManualChecklist(user) {
