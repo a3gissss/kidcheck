@@ -11,8 +11,8 @@ export const DEFAULT_MODEL = 'gemini-3.5-flash-lite'
 export const SYSTEM_INSTRUCTION = `You extract facts from a community health worker's short note about a sick child (age 2 months to 5 years).
 Return JSON that matches the schema. Follow these rules exactly:
 - Fill a field only if the note states it. If the note does not mention it, use null. Never guess or assume.
-- Use false only when the note clearly says the sign is absent (for example "no blood in stool", "no fever", "drinking well" means unableToDrink is false).
-- "Vomiting" alone is not "vomits everything". Use true only if the note says the child vomits everything or cannot keep anything down.
+- Use false only when the note clearly says that sign itself is absent (for example "no blood in stool", "no fever", "drinking well" means unableToDrink is false). Never conclude a sign is absent from other facts: a danger sign the note does not rule out stays null.
+- "Vomiting" alone is not "vomits everything". Use true only if the note says the child vomits everything or cannot keep anything down. Use false only if the note says the child is not vomiting or keeps food and drink down. Vomiting a few times, even while still drinking, leaves vomitsEverything null.
 - ageMonths is whole months. Convert years: 2 years = 24, 1 and a half years = 18.
 - Durations are whole days. "A week" = 7, "two weeks" = 14, "since yesterday" = 1.
 - breathsPerMinute only when a counted number is given. "Breathing fast" alone is null.
