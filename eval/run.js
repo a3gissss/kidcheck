@@ -1,21 +1,39 @@
 // Measures how well the AI extractor fills the checklist on 20 synthetic,
-// hand-labelled descriptions. Run with: npm run eval  (needs GEMINI_API_KEY in .env.local)
-// Writes eval/RESULTS.md. Uses about 20 requests of the free quota.
+// hand-labelled descriptions. Writes eval/RESULTS.md. Uses about 20 requests
+// of the free quota. Two ways to run it:
+//   npm run eval                                   (needs GEMINI_API_KEY in .env.local)
+//   npm run eval -- https://your-site.vercel.app   (uses the deployed /api/extract and its key)
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { extractFields, DEFAULT_MODEL } from '../server/extract.js'
 import { ALL_FIELDS, emptyFields } from '../src/lib/fields.js'
 
 const DANGER_KEYS = ['convulsions', 'unableToDrink', 'vomitsEverything', 'chestIndrawing', 'unusuallySleepy', 'swellingBothFeet', 'muacColour', 'bloodInStool']
-const DELAY_MS = 5000 // stay under free-tier requests per minute
+
+const siteUrl = process.argv[2]?.replace(/\/$/, '')
+// Live mode stays under the site's own limit of 10 requests a minute per IP.
+const DELAY_MS = siteUrl ? 7000 : 5000
 
 const apiKey = process.env.GEMINI_API_KEY
-if (!apiKey) {
-  console.error('GEMINI_API_KEY is missing. Put it in .env.local and run: npm run eval')
+if (!siteUrl && !apiKey) {
+  console.error('GEMINI_API_KEY is missing. Put it in .env.local, or pass the live site: npm run eval -- https://your-site.vercel.app')
   process.exit(1)
 }
-const model = process.env.GEMINI_MODEL || DEFAULT_MODEL
+let model = process.env.GEMINI_MODEL || DEFAULT_MODEL
 const cases = JSON.parse(readFileSync(new URL('./cases.json', import.meta.url), 'utf8'))
+
+async function extract(text) {
+  if (!siteUrl) return (await extractFields(text, { apiKey, model })).fields
+  const res = await fetch(`${siteUrl}/api/extract`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text }),
+  })
+  const data = await res.json().catch(() => null)
+  if (!res.ok || !data?.fields) throw Object.assign(new Error(data?.message ?? 'bad response'), { status: res.status })
+  model = data.model
+  return data.fields
+}
 
 let correct = 0
 let total = 0
@@ -30,7 +48,7 @@ for (const [i, c] of cases.entries()) {
   const expected = { ...emptyFields(), ...c.expected }
   let got
   try {
-    got = (await extractFields(c.text, { apiKey, model })).fields
+    got = await extract(c.text)
   } catch (err) {
     console.error(`case ${c.id}: request failed (${err?.status ?? ''} ${err?.message})`)
     rows.push(`| ${c.id} | request failed | |`)
@@ -60,7 +78,7 @@ for (const [i, c] of cases.entries()) {
 const pct = (a, b) => (b === 0 ? 'n/a' : `${((100 * a) / b).toFixed(1)}%`)
 const report = `# Extraction evaluation
 
-Model: \`${model}\` · Run: ${new Date().toISOString().slice(0, 10)} · ${cases.length} synthetic cases · ${ALL_FIELDS.length} fields each
+Model: \`${model}\` · Source: ${siteUrl ? `live site ${siteUrl}` : 'local, direct to Gemini'} · Run: ${new Date().toISOString().slice(0, 10)} · ${cases.length} synthetic cases · ${ALL_FIELDS.length} fields each
 
 | Measure | Result |
 |---|---|

@@ -26,9 +26,11 @@
 
 | Nov 3, 2026 | Stage 7 done: live at https://kidcheck-three.vercel.app. Headers, deep links, API checks, real Gemini extraction and a full journey all pass on the live site; console empty; no sideways scroll on phone. |
 
+| Nov 3, 2026 | AI eval run against the live site (eval script gained a live mode): 106/106 stated facts, 0 missed danger signs, 1 invented answer (case 10: "vomited twice" filled as Vomits everything: No). Results in README. |
+
 ## Next
 
-- Run `npm run eval` (needs GEMINI_API_KEY in .env.local) and put the numbers in the README.
+- Decide whether to tighten the prompt so "vomited a few times" leaves Vomits everything as Not asked, then re-run the eval.
 - Stage 8: README screenshots, architecture diagram, licence.
 - Deliverables: demo video script, one-page PDF, code PDF, final checks.
 - Add `GEMINI_API_KEY` to `.env.local`, try the demo cases, run `npm run eval`.

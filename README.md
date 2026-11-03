@@ -17,7 +17,7 @@ Built for **DSH Hacks V2** (AI x Healthcare). Submission deadline: **Nov 15, 202
 | 1. Project setup | Done |
 | 2. UI and navigation | Done |
 | 3. Rule engine + unit tests | Done |
-| 4. Gemini extraction + fallback | Done; works live (accuracy eval not run yet: `npm run eval`) |
+| 4. Gemini extraction + fallback | Done; evaluated on 20 synthetic cases (see AI evaluation) |
 | 5. Validation and error states | Done |
 | 6. Testing and debugging | Done |
 | 7. Deploy to Vercel | Done: https://kidcheck-three.vercel.app |
@@ -77,7 +77,18 @@ Without a key the app still works: the AI button shows "AI unavailable" and the 
 
 ## AI evaluation
 
-`npm run eval` runs the extractor on 20 hand-labelled synthetic descriptions (`eval/cases.json`) and writes `eval/RESULTS.md`. It reports field accuracy, invented fields, and danger signs the AI missed. These are synthetic results only, not real-world accuracy.
+`npm run eval` runs the extractor on 20 hand-labelled synthetic descriptions (`eval/cases.json`) and writes [`eval/RESULTS.md`](eval/RESULTS.md). Add `-- https://your-site.vercel.app` to test the deployed site instead of calling Gemini directly.
+
+Latest run (Nov 3, 2026, `gemini-3.5-flash-lite`, against the live site):
+
+| Measure | Result |
+|---|---|
+| Facts stated in the text, extracted correctly | **106 / 106** |
+| All 360 fields correct, including correctly left as "Not asked" | 359 / 360 |
+| Danger signs stated in the text but missed | **0** |
+| Answers filled that the text did not state | 1: "vomited twice today" was filled as *Vomits everything: No* |
+
+The test set includes Nigerian Pidgin, ages in years, negations, and a note that tries to make the AI set every danger sign to "No". The one invented answer is shown with an AI badge for the CHW to check before the rules run. These are synthetic results labelled by the developer, not real-world accuracy.
 
 `.env.local` is git-ignored. Only `.env.example` is committed.
 
