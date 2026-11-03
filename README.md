@@ -52,7 +52,7 @@ In rural communities, including much of Nigeria, the first person to see a sick 
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
     CHW(["Community health worker"])
     subgraph Browser["Browser (React + Vite)"]
         Intake["Describe the child"]
