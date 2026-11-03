@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KidCheck: project description</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ink: #0f172a; --muted: #475569; --line: #e2e8f0; --ground: #f8fafc; --teal: #0f766e; --teal-tint: #f0fdfa; --red: #b91c1c; --amber-bg: #fef3c7; --amber-ink: #78350f; --violet-bg: #ede9fe; --violet-ink: #5b21b6; }
+  body { font-family: "Segoe UI", system-ui, Arial, sans-serif; color: var(--ink); font-size: 9.3pt; line-height: 1.36; width: 210mm; height: 297mm; padding: 9mm 13mm 8mm; background: #fff; }
+  .disclaimer { background: var(--amber-bg); color: var(--amber-ink); font-size: 8pt; text-align: center; padding: 1.6mm 3mm; border-radius: 1.5mm; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; margin: 3mm 0 3mm; padding-bottom: 2.5mm; border-bottom: 0.4mm solid var(--line); }
+  .brand { display: flex; align-items: center; gap: 3mm; }
+  .mark { width: 11mm; height: 11mm; border-radius: 2.4mm; background: var(--teal); display: grid; place-items: center; }
+  h1 { font-size: 24pt; line-height: 1; letter-spacing: -0.02em; }
+  .tagline { font-size: 11.5pt; color: var(--teal); font-weight: 600; margin-top: 1mm; }
+  .links { text-align: right; font-size: 8.4pt; color: var(--muted); line-height: 1.5; }
+  .links b { color: var(--ink); font-weight: 600; }
+  h2 { font-size: 10.5pt; margin-bottom: 1.2mm; color: var(--ink); }
+  p + p { margin-top: 1.4mm; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.2mm 6mm; }
+  section { break-inside: avoid; }
+  .lead { font-size: 9.8pt; }
+  ul { padding-left: 4.2mm; }
+  li { margin-top: 0.7mm; }
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2mm; margin: 2mm 0 1mm; }
+  .step { background: var(--ground); border: 0.3mm solid var(--line); border-radius: 1.6mm; padding: 2mm 2.4mm; }
+  .step b { display: block; font-size: 9pt; }
+  .step span { font-size: 8.2pt; color: var(--muted); }
+  .step.ai { background: var(--violet-bg); border-color: #c4b5fd; }
+  .step.ai b { color: var(--violet-ink); }
+  .step.rules { background: var(--teal-tint); border-color: #99f6e4; }
+  .step.rules b { color: var(--teal); }
+  .shot { border: 0.3mm solid var(--line); border-radius: 1.6mm; overflow: hidden; height: 51mm; background: #fef2f2; }
+  /* Zoom into the red result panel of the 1440px-wide screenshot (x 384 to 1056, y from 205). */
+  .shot img { width: 212%; display: block; margin-left: -56.5%; margin-top: -30.2%; }
+  .caption { font-size: 7.6pt; color: var(--muted); margin-top: 1mm; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.6pt; }
+  td { padding: 0.9mm 0; border-bottom: 0.25mm solid var(--line); vertical-align: top; }
+  td:first-child { color: var(--muted); width: 31%; padding-right: 2mm; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2mm; margin-top: 1.4mm; }
+  .stat { border: 0.3mm solid var(--line); border-radius: 1.6mm; padding: 1.2mm 2mm; }
+  .stat b { font-size: 13pt; display: block; line-height: 1.1; }
+  .stat span { font-size: 7.6pt; color: var(--muted); }
+  .refer { color: var(--red); font-weight: 600; }
+  footer { margin-top: 2.6mm; padding-top: 2mm; border-top: 0.4mm solid var(--line); font-size: 7.8pt; color: var(--muted); display: flex; justify-content: space-between; gap: 6mm; }
+</style>
+</head>
+<body>
+  <div class="disclaimer">Educational prototype. Not a medical device. Not clinically validated. All demo cases are synthetic.</div>
+
+  <header>
+    <div class="brand">
+      <div class="mark"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M9 16.5l4.5 4.5L23 11" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <h1>KidCheck</h1>
+        <div class="tagline">Plain words in, WHO-backed decisions out.</div>
+      </div>
+    </div>
+    <div class="links">
+      <b>Live demo</b> kidcheck-three.vercel.app<br>
+      <b>Code</b> github.com/a3gissss/kidcheck<br>
+      DSH Hacks V2 · AI x Healthcare · Abdulhafeez Ibrahim
+    </div>
+  </header>
+
+  <div class="grid">
+    <section>
+      <h2>The problem</h2>
+      <p class="lead">In rural communities, including much of Nigeria, the first person to see a sick child is often a community health worker with a few weeks of training and a paper chart. Under pressure, danger signs such as chest indrawing or not being able to drink get missed, and the child reaches a clinic too late.</p>
+    </section>
+    <section>
+      <h2>The solution</h2>
+      <p class="lead">KidCheck is a web app that helps the health worker check every danger sign in a child aged 2 months to 5 years and decide: <span class="refer">refer urgently</span>, treat at home, or no illness sign found. AI handles only language. Fixed, tested rules from the WHO/UNICEF chart booklet make the decision and show why.</p>
+    </section>
+  </div>
+
+  <section style="margin-top:2.6mm">
+    <h2>How it works</h2>
+    <div class="flow">
+      <div class="step"><b>1. Describe</b><span>The CHW writes what the carer said, in plain words. No names.</span></div>
+      <div class="step ai"><b>2. AI fills</b><span>Gemini turns the text into checklist answers, each marked AI. Unmentioned signs stay "Not asked".</span></div>
+      <div class="step"><b>3. CHW checks</b><span>Confirms or corrects every answer; adds breath count, chest indrawing, MUAC.</span></div>
+      <div class="step rules"><b>4. Rules decide</b><span>The WHO iCCM rule engine gives the result, the triggering sign and the chart page.</span></div>
+    </div>
+  </section>
+
+  <div class="grid" style="margin-top:2.6mm">
+    <section>
+      <h2>Key features (all working)</h2>
+      <ul>
+        <li>AI checklist filling with an <b>AI</b> mark on every machine answer</li>
+        <li>Rule engine for the WHO/UNICEF danger signs, fast breathing, diarrhoea, fever and MUAC, citing booklet pages</li>
+        <li>"Not asked" is never treated as "No": unchecked danger signs give <i>Needs more answers</i></li>
+        <li>Full-screen urgent alert, pre-referral steps, printable referral note</li>
+        <li>Case log on the device; edit, filter, delete</li>
+        <li>Manual checklist when the AI is unavailable, with identical rules</li>
+        <li>Blocks phone numbers before sending to AI; works on phones; accessible</li>
+      </ul>
+    </section>
+    <section>
+      <div class="shot"><img src="../../screenshots/result-refer.png" alt="KidCheck result: Refer urgently, triggered by Vomits everything, chart page 6"></div>
+      <div class="caption">Synthetic case: "Boy, 18 months, coughing 3 days, breathing fast, vomits everything" → Refer urgently (chart p. 6).</div>
+      <h2 style="margin-top:3mm">Technologies</h2>
+      <p>React 19 · Vite · Tailwind CSS v4 · React Router · Google Gemini API (<code>@google/genai</code>) · Vercel serverless function and hosting · localStorage · Vitest, Testing Library, axe-core · MIT licence</p>
+    </section>
+  </div>
+
+  <div class="grid" style="margin-top:2.6mm">
+    <section>
+      <h2>Target users</h2>
+      <table>
+        <tr><td>Primary</td><td>Community health workers and volunteers in low-resource settings</td></tr>
+        <tr><td>Also</td><td>Nursing and public health students practising assessments</td></tr>
+        <tr><td>Setting</td><td>Phone or laptop at the point of care; printed note for the facility</td></tr>
+      </table>
+      <h2 style="margin-top:3mm">Expected impact</h2>
+      <p>Fewer missed danger signs, because every sign is asked about and an unanswered one blocks the decision. Faster referral, because the result is immediate and explains itself. A record of each case where there was none. Low cost: free tools, a phone browser, and no patient data leaving the device.</p>
+    </section>
+    <section>
+      <h2>AI and technical approach</h2>
+      <table>
+        <tr><td>AI</td><td>Gemini (<code>gemini-3.5-flash-lite</code>, free tier) with a JSON schema built from the checklist; output re-checked on the server</td></tr>
+        <tr><td>Decision</td><td>Plain JavaScript rule engine, no AI, 56 unit tests</td></tr>
+        <tr><td>Privacy</td><td>Key on the server only; cases stored in the browser; no names</td></tr>
+        <tr><td>Quality</td><td>168 automated tests incl. full-journey UI tests; accessibility scan clean</td></tr>
+      </table>
+      <div class="stats">
+        <div class="stat"><b>106/106</b><span>stated facts extracted</span></div>
+        <div class="stat"><b>0</b><span>danger signs missed</span></div>
+        <div class="stat"><b>168</b><span>automated tests</span></div>
+      </div>
+      <div class="caption">AI figures: 20 synthetic, developer-labelled cases incl. Nigerian Pidgin. Not real-world accuracy.</div>
+    </section>
+  </div>
+
+  <footer>
+    <span>Rules: WHO/UNICEF, <i>Caring for the sick child in the community</i>, CHW chart booklet (2014). Not reviewed by a clinician; doses are never shown.</span>
+    <span>Limits: ages 2–59 months; no HIV/TB questions; malaria area assumed.</span>
+  </footer>
+</body>
+</html>

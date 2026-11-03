@@ -31,3 +31,6 @@ dist-ssr
 # Design review screenshots (local only)
 .impeccable/review/
 .impeccable/hook.cache.json
+
+# Generated from build-code-pdf.mjs
+docs/deliverables/src/code.html

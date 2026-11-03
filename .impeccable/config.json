@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "consolas",
+        "createdAt": "2026-11-03T07:05:13.712Z",
+        "reason": "Claude: monospace for source-code listings in the printed code PDF (docs/deliverables), not app UI"
+      }
+    ]
+  }
+}

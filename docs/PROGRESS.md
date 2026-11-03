@@ -32,8 +32,12 @@
 
 | Nov 3, 2026 | Stage 8 done: MIT licence, package metadata (v1.0.0), 7 screenshots captured from the live site, README rewritten to the brief's checklist (problem, how it works, features, Mermaid architecture, rules, AI eval, setup, testing, deployment, privacy, limitations, licence). |
 
+| Nov 3, 2026 | Deliverables: demo video script with an 11-shot plan (about 2:45), one-page project description PDF (verified 1 page), 43-page source code PDF (cover, contents with page numbers, architecture, folder structure, decisions, 16 full files with highlighting, tests). PDFs are built from HTML in docs/deliverables/src. |
+
 ## Next
 
+- Record the demo video using docs/DEMO_SCRIPT.md.
+- Final checks against the brief's checklist.
 - On GitHub: add the repo description, website link and topics (About ⚙).
 - Deliverables: demo video script, one-page PDF, code PDF, final checks.
 - Add `GEMINI_API_KEY` to `.env.local`, try the demo cases, run `npm run eval`.

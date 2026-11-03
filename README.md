@@ -228,6 +228,7 @@ kidcheck/
 
 ## Docs
 
+- **Submission:** [one-page project description (PDF)](docs/deliverables/KidCheck-Project-Description.pdf) · [source code (PDF)](docs/deliverables/KidCheck-Source-Code.pdf) · [demo video script](docs/DEMO_SCRIPT.md)
 - [Project plan](docs/PROJECT_PLAN.md) and [idea selection](docs/IDEA_SELECTION.md)
 - Stage guides: [1 setup](docs/STAGE_1_SETUP.md), [2 UI](docs/STAGE_2_UI.md), [3 rules](docs/STAGE_3_RULES.md), [4 AI](docs/STAGE_4_AI.md), [5 errors](docs/STAGE_5_ERRORS.md), [6 testing](docs/STAGE_6_TESTING.md), [7 deploy](docs/STAGE_7_DEPLOY.md)
 - [Getting API keys](docs/API_KEYS.md) · [Progress log](docs/PROGRESS.md) · [Hackathon brief](docs/HACKATHON_BRIEF.md)

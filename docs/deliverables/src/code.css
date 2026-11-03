@@ -1,0 +1,61 @@
+@page { size: A4; margin: 14mm 14mm 16mm; }
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", system-ui, Arial, sans-serif; color: #0f172a; font-size: 9.6pt; line-height: 1.45; margin: 0; }
+h1, h2, h3 { margin: 0; }
+h2 { font-size: 15pt; margin-bottom: 3mm; letter-spacing: -0.01em; }
+p { margin: 0 0 2.5mm; max-width: 170mm; }
+a { color: #0f766e; text-decoration: none; }
+code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.6pt; }
+
+.page { break-before: page; }
+.page-flow { margin-top: 9mm; }
+
+.cover { height: 265mm; display: flex; flex-direction: column; }
+.disclaimer { background: #fef3c7; color: #78350f; font-size: 8.5pt; text-align: center; padding: 2mm; border-radius: 1.5mm; }
+.cover-main { margin-top: 30mm; }
+.mark { width: 18mm; height: 18mm; border-radius: 4mm; background: #0f766e; display: grid; place-items: center; }
+.cover h1 { font-size: 38pt; margin-top: 6mm; letter-spacing: -0.02em; line-height: 1; }
+.tagline { font-size: 15pt; color: #0f766e; font-weight: 600; margin-top: 2mm; }
+.subtitle { font-size: 12pt; color: #475569; margin-top: 6mm; }
+.meta { margin-top: 8mm; border-collapse: collapse; font-size: 10pt; }
+.meta td { padding: 1.4mm 6mm 1.4mm 0; border-bottom: 0.25mm solid #e2e8f0; }
+.meta td:first-child { color: #475569; }
+.toc { margin-top: auto; border-top: 0.4mm solid #e2e8f0; padding-top: 5mm; }
+.toc h2 { font-size: 12pt; }
+.toc ol { list-style: none; padding: 0; margin: 0; columns: 2; column-gap: 10mm; font-size: 10pt; }
+.toc li { padding: 0.8mm 0; break-inside: avoid; }
+.toc a { display: flex; justify-content: space-between; gap: 4mm; border-bottom: 0.25mm dotted #cbd5e1; }
+.toc .pg { color: #475569; }
+
+.arch { display: grid; grid-template-columns: 1fr 6mm 1fr 6mm 1fr; align-items: center; margin: 4mm 0 2mm; }
+.box { border: 0.3mm solid #cbd5e1; border-radius: 2mm; padding: 2.5mm 3mm; background: #f8fafc; font-weight: 600; font-size: 9.5pt; min-height: 19mm; }
+.box small { display: block; font-weight: 400; color: #475569; font-size: 8pt; margin-top: 0.8mm; }
+.box.server { background: #f1f5f9; }
+.box.ai { background: #ede9fe; border-color: #c4b5fd; color: #5b21b6; }
+.box.rules { background: #f0fdfa; border-color: #99f6e4; color: #0f766e; }
+.arrow { text-align: center; color: #0f766e; font-weight: 700; }
+.note { color: #475569; font-size: 9pt; margin-top: 2mm; }
+
+table.plain { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 3mm 0; }
+table.plain th { text-align: left; color: #475569; font-weight: 600; border-bottom: 0.4mm solid #cbd5e1; padding: 1.2mm 3mm 1.2mm 0; }
+table.plain td { border-bottom: 0.25mm solid #e2e8f0; padding: 1.2mm 3mm 1.2mm 0; vertical-align: top; }
+
+.tree { font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.6pt; background: #f8fafc; border: 0.3mm solid #e2e8f0; border-radius: 2mm; padding: 3mm 4mm; line-height: 1.5; white-space: pre; }
+.decisions { padding-left: 5mm; margin: 0; }
+.decisions li { margin-bottom: 1.8mm; max-width: 172mm; }
+
+.intro { background: #f0fdfa; border: 0.3mm solid #99f6e4; border-radius: 2mm; padding: 2.5mm 3.5mm; max-width: none; }
+.file { margin-top: 4mm; }
+.file-head { display: flex; justify-content: space-between; font-family: Consolas, "Cascadia Mono", monospace; font-size: 8.6pt; font-weight: 700; color: #f8fafc; background: #0f766e; padding: 1.4mm 3mm; border-radius: 1.6mm 1.6mm 0 0; break-after: avoid; }
+.file-head span:last-child { font-weight: 400; opacity: 0.85; }
+pre { margin: 0; background: #f8fafc; border: 0.3mm solid #e2e8f0; border-top: 0; border-radius: 0 0 1.6mm 1.6mm; padding: 3mm; font-family: Consolas, "Cascadia Mono", monospace; font-size: 7.6pt; line-height: 1.42; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* Syntax colours, chosen for print contrast */
+.hljs-keyword, .hljs-built_in, .hljs-literal { color: #7c2d92; }
+.hljs-string, .hljs-template-string, .hljs-regexp { color: #166534; }
+.hljs-number { color: #9a3412; }
+.hljs-comment { color: #64748b; font-style: italic; }
+.hljs-title, .hljs-title.function_ { color: #1d4ed8; }
+.hljs-attr, .hljs-property { color: #0f766e; }
+.hljs-tag, .hljs-name { color: #b91c1c; }
+.hljs-params, .hljs-variable { color: #0f172a; }
