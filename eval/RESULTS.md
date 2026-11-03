@@ -4,9 +4,9 @@ Model: `gemini-3.5-flash-lite` · Source: live site https://kidcheck-three.verce
 
 | Measure | Result |
 |---|---|
-| All fields correct (including correctly left as "not asked") | 99.7% (359/360) |
+| All fields correct (including correctly left as "not asked") | 100.0% (360/360) |
 | Stated facts extracted correctly | 100.0% (106/106) |
-| Fields filled that the text did not state | 1 |
+| Fields filled that the text did not state | 0 |
 | Danger signs stated in the text but missed or wrong | 0 |
 
 Synthetic text only, labelled by the developer. This says nothing about real-world accuracy.
@@ -23,7 +23,7 @@ Every AI answer is shown to the CHW to check before the rules run.
 | 7 | all correct |  |
 | 8 | all correct |  |
 | 9 | all correct |  |
-| 10 | 1 wrong | vomitsEverything: expected null, got false |
+| 10 | all correct |  |
 | 11 | all correct |  |
 | 12 | all correct |  |
 | 13 | all correct |  |

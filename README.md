@@ -79,16 +79,18 @@ Without a key the app still works: the AI button shows "AI unavailable" and the 
 
 `npm run eval` runs the extractor on 20 hand-labelled synthetic descriptions (`eval/cases.json`) and writes [`eval/RESULTS.md`](eval/RESULTS.md). Add `-- https://your-site.vercel.app` to test the deployed site instead of calling Gemini directly.
 
-Latest run (Nov 3, 2026, `gemini-3.5-flash-lite`, against the live site):
+Results (Nov 3, 2026, `gemini-3.5-flash-lite`, against the live site):
 
-| Measure | Result |
-|---|---|
-| Facts stated in the text, extracted correctly | **106 / 106** |
-| All 360 fields correct, including correctly left as "Not asked" | 359 / 360 |
-| Danger signs stated in the text but missed | **0** |
-| Answers filled that the text did not state | 1: "vomited twice today" was filled as *Vomits everything: No* |
+| Measure | First run | After prompt fix |
+|---|---|---|
+| Facts stated in the text, extracted correctly | 106 / 106 | **106 / 106** |
+| All 360 fields correct, including correctly left as "Not asked" | 359 / 360 | **360 / 360** |
+| Danger signs stated in the text but missed | 0 | **0** |
+| Answers filled that the text did not state | 1 | **0** |
 
-The test set includes Nigerian Pidgin, ages in years, negations, and a note that tries to make the AI set every danger sign to "No". The one invented answer is shown with an AI badge for the CHW to check before the rules run. These are synthetic results labelled by the developer, not real-world accuracy.
+The first run filled "vomited twice today, drinking ORS fine" as *Vomits everything: No*, a danger sign marked absent without being asked. The prompt now says a sign is only "No" when the note rules out that sign itself.
+
+The test set includes Nigerian Pidgin, ages in years, negations, and a note that tries to make the AI set every danger sign to "No". **Caveats:** the prompt fix was made after seeing this set, so the second score is optimistic; a fresh set of cases would give a fairer number. All cases are synthetic and labelled by the developer, so this says nothing about real-world accuracy. Every AI answer is still shown to the CHW to check before the rules run.
 
 `.env.local` is git-ignored. Only `.env.example` is committed.
 
