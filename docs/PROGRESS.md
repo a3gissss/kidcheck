@@ -34,10 +34,12 @@
 
 | Nov 3, 2026 | Deliverables: demo video script with an 11-shot plan (about 2:45), one-page project description PDF (verified 1 page), 43-page source code PDF (cover, contents with page numbers, architecture, folder structure, decisions, 16 full files with highlighting, tests). PDFs are built from HTML in docs/deliverables/src. |
 
+| Nov 3, 2026 | Final checks against the brief: all pass (journeys live with real AI, console, links, phone, secrets across history and live bundle, live build matches repo, one-pager 1 page, code PDF matches every line). Fixed a flaky journey-test timeout. Report in docs/FINAL_CHECKS.md. |
+
 ## Next
 
 - Record the demo video using docs/DEMO_SCRIPT.md.
-- Final checks against the brief's checklist.
+- GitHub About: description and topics.
 - On GitHub: add the repo description, website link and topics (About ⚙).
 - Deliverables: demo video script, one-page PDF, code PDF, final checks.
 - Add `GEMINI_API_KEY` to `.env.local`, try the demo cases, run `npm run eval`.
