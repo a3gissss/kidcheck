@@ -30,9 +30,11 @@
 
 | Nov 3, 2026 | Prompt tightened (a sign is only "No" when the note rules out that sign itself); deployed; eval re-run on the live site: 360/360 fields, 0 invented, 0 missed. Noted in README that the fix was tuned on the same set. |
 
+| Nov 3, 2026 | Stage 8 done: MIT licence, package metadata (v1.0.0), 7 screenshots captured from the live site, README rewritten to the brief's checklist (problem, how it works, features, Mermaid architecture, rules, AI eval, setup, testing, deployment, privacy, limitations, licence). |
+
 ## Next
 
-- Stage 8: README screenshots, architecture diagram, licence.
+- On GitHub: add the repo description, website link and topics (About ⚙).
 - Deliverables: demo video script, one-page PDF, code PDF, final checks.
 - Add `GEMINI_API_KEY` to `.env.local`, try the demo cases, run `npm run eval`.
 - Put the repo on GitHub (`git init` not done yet).
